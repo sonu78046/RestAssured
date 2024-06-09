@@ -20,7 +20,7 @@
 @tag
 Feature: Validating place api's 
 
-  @tag1
+  @AddPlace
   Scenario Outline: Verify if place is being succesfully added using AddPlaceAPI
     Given Add Place Payload with "<name>" "<Language>" "<Address>"
     When user calls "addPlaceAPI" with "POST" http request
@@ -33,7 +33,7 @@ Examples:
 | SonuHouse  | English	| worls cross center |
 #| KajalHouse | French	  |  Sea cross center|
 
-@tag2
+@DeletePlace
 Scenario: Verify if Delete Place functionality is working
 Given fetch the "place_id"
 When user calls "deletePlaceAPI" with "POST" http request

@@ -19,7 +19,7 @@ public class StepDefination extends Utils{
 
 	RequestSpecification res;
 	static Response response;
-	static String placeid;
+	public static String placeid;
 	TestDataBuild tdb=new TestDataBuild();
 	
 	@Given("Add Place Payload with {string} {string} {string}")
